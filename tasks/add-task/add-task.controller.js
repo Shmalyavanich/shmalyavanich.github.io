@@ -8,14 +8,14 @@
 	AddTask.$inject = ["tasksSrv", "usersSrv"];
 	
 	function AddTask(taskSrv, usersSrv) {
-		let $ctrl = this;
+		var $ctrl = this;
 		
 		init();
 
 		function init() {
 			$ctrl.addNewTask = addNewTask;
 			usersSrv.getData()
-				.then((users) => { $ctrl.users = users });
+				.then(function (users) { $ctrl.users = users });
 		}
 
 		function addNewTask(taskToAdd) {

@@ -9,7 +9,7 @@
 
 	function usersSrv($http, $q) {
 		return {
-			getData
+			getData: getData
 		};
 
 		function getData() {
@@ -19,7 +19,7 @@
 					return response.data;
 				})
 				.catch(function(response) {
-					$q.reject(`Error: can not retrive data ${response.status}`)
+					$q.reject('Error: can not retrive data' + response.status)
 				});
 		}
 	}

@@ -7,7 +7,7 @@
 		.run(runApp);
 
 	function configAppRouter($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.hashPrefix('');
+    //$locationProvider.hashPrefix('');
 
 		$urlRouterProvider.otherwise("/");
 

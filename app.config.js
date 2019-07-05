@@ -1,4 +1,5 @@
 (function() {
+  "use strict";
 
 	angular
 		.module("app")
@@ -12,17 +13,17 @@
     $stateProvider
       .state("home", {
         url: "/",
-        template: "<task-list></task-list>",
+        template: "<task-list></task-list>"
       })
       .state("users", {
         url: "/users",
         templateUrl: "users/user-list.html",
         controller: "UserList",
-        controllerAs: "$ctrl",
+        controllerAs: "$ctrl"
       })
       .state("addTask", {
         url: "/addTask",
-        template: "<add-task></add-task>",
+        template: "<add-task></add-task>"
       });
 	}
 

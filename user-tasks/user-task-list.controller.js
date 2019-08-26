@@ -7,6 +7,7 @@
 
 	function UserTaskList() {
 		$scope.langState = 'en';
+		$scope.changeLangState = changeLangState;
 
 
 		function changeLangState(langCode) {

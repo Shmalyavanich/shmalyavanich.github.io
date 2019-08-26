@@ -28,8 +28,17 @@
 									height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-	<div class="container">
+<script>
+	var langState = 'en';
+	$scope.changeLangState = changeLangState;
 
+	function changeLangState(langCode) {
+		langState = langCode;
+	}
+</script>
+
+	<div class="container">
+		{{myLang}}
 		<div class="langs">
 			<div class="langs-item" ng-click="changeLangState(en)">EN</div>
 			<div class="langs-item" ng-click="changeLangState(ru)">RU</div>

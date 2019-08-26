@@ -32,11 +32,6 @@
 
 	
 	function runApp() {
-    $scope.langState = 'en';
-    $scope.changeLangState = changeLangState;
-
-    function changeLangState(langCode) {
-      $scope.langState = langCode;
-    }
+    $scope.myLang = 'myLittleLang';
 	}
 })();

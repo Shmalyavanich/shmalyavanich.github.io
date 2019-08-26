@@ -13,7 +13,6 @@
 		init();
 
 		function init() {
-			console.log(error);
 			usersSrv.getData().then( function (data) {$ctrl.users = data} );
 		}
 	}

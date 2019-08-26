@@ -31,7 +31,7 @@
 	}
 
 	
-	function runApp() {
+	function runApp($scope) {
     $scope.myLang = 'myLittleLang';
 	}
 })();

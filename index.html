@@ -29,23 +29,43 @@
 <!-- End Google Tag Manager (noscript) -->
 
 	<div class="container">
-		<nav class="navbar navbar-default">
-				<a class="navbar-brand">Task Manager</a>
-		</nav>
-	
-		<div class="row">
-			<div class="col-md-2">
-				<ul class="nav nav-pills nav-stacked">
-					<li><a ui-sref="home">Tasks</a></li>
-					<li><a ui-sref="users">Users</a></li>
-					<li><a ui-sref="addTask">Add Task</a></li>
-				</ul>
-			</div>
-			<div class="col-md-10">
-			</div>
+
+		<div class="langs">
+			<div class="langs-item" ng-click="changeLangState(en)">EN</div>
+			<div class="langs-item" ng-click="changeLangState(ru)">RU</div>
+			<div class="langs-item" ng-click="changeLangState(ua)">UA</div>
 		</div>
 
-        <ui-view></ui-view>
+		<div class="wrapper-en" ng-if="langState == 'en'">
+			<nav class="navbar navbar-default">
+					<a class="navbar-brand">Task Manager</a>
+			</nav>
+
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a ui-sref="home">Tasks</a></li>
+						<li><a ui-sref="users">Users</a></li>
+						<li><a ui-sref="addTask">Add Task</a></li>
+					</ul>
+				</div>
+				<div class="col-md-10">
+				</div>
+			</div>
+
+					<ui-view></ui-view>
+		</div>
+
+		<div class="wrapper-ru" ng-if="langState == 'ru'">
+			<p>С другой стороны консультация с широким активом позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития.</p>
+
+			<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции способствует подготовки и реализации форм развития. С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение направлений прогрессивного развития. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития.</p>
+		</div>
+
+		<div class="wrapper-ua" ng-if="langState == 'ua'">
+			<h3>Чому ми ним користуємось?</h3>
+			<p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад, "Тут іде текст. Тут іде текст." Це робить текст схожим на оповідний. Багато програм верстування та веб-дизайну використовують Lorem Ipsum як зразок і пошук за терміном "lorem ipsum" відкриє багато веб-сайтів, які знаходяться ще в зародковому стані. Різні версії Lorem Ipsum з'явились за минулі роки, деякі випадково, деякі було створено зумисно (зокрема, жартівливі).</p>
+		</div>
 	</div>
 
 	<script src="vendor/angular/angular.js"></script>

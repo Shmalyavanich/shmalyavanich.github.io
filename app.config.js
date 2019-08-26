@@ -31,6 +31,6 @@
 	}
 
 	
-	function runApp($scope) {
+	function runApp() {
 	}
 })();

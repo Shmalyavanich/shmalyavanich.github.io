@@ -8,11 +8,12 @@
 	TaskList.$inject = ["tasksSrv"];
 	
 	function TaskList(tasksSrv) {
-		$scope.changeLangState = changeLangState;
+		var $ctrl = this;
+
+		$ctrl.changeLangState = changeLangState;
 
 		console.log('controller');
 
-		let $ctrl = this;
 
 		init();
 

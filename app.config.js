@@ -27,10 +27,16 @@
         url: "/addTask",
         template: "<add-task></add-task>"
       });
+
 	}
 
 	
 	function runApp() {
-		
+    $scope.langState = 'en';
+    $scope.changeLangState = changeLangState;
+
+    function changeLangState(langCode) {
+      $scope.langState = langCode;
+    }
 	}
 })();

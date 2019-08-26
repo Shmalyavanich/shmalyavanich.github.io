@@ -24,6 +24,8 @@
 		$ctrl.langState = 'en';
 
 		function changeLangState(langCode) {
+			console.log('test');
+			console.log(langCode);
 			$ctrl.langState = langCode;
 		}
 	}

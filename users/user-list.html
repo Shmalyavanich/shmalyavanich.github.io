@@ -1,17 +1,34 @@
-<h3>Users</h3>
-<div class="btn-group" role="group" aria-label="...">
-	<button class="btn btn-primary">New User</button>
+<div class="langs">
+	<div class="langs-item" ng-click="$ctrl.changeLangState('en')">English</div>
+	<div class="langs-item" ng-click="$ctrl.changeLangState('ru')">Русский</div>
+	<div class="langs-item" ng-click="$ctrl.changeLangState('ua')">Українська</div>
 </div>
-<table class="table table-condensed table-striped" >
-	<tr>
-		<th>ID</th>
-		<th>Name</th>
-		<th>Location</th>
-	</tr>
-	<tr ng-repeat="item in $ctrl.users">
-		<td>{{item.id}}</td>
-		<td><a>{{item.name}}</a></td>
-		<td>{{item.location}}</td>
-	</tr>
-</table>
-<p>На странице юзеров отображается список воображаемых друзей, котороые всегда помогут</p>
+
+<div class="wrapper-en" ng-if="$ctrl.langState == 'en'">
+	<h3>Users</h3>
+	<div class="btn-group" role="group" aria-label="...">
+		<button class="btn btn-primary">New User</button>
+	</div>
+	<table class="table table-condensed table-striped" >
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Location</th>
+		</tr>
+		<tr ng-repeat="item in $ctrl.users">
+			<td>{{item.id}}</td>
+			<td><a>{{item.name}}</a></td>
+			<td>{{item.location}}</td>
+		</tr>
+	</table>
+
+	<p>Aliquam erat volutpat. Morbi condimentum elit non vehicula sodales. Quisque sollicitudin aliquet iaculis. Vivamus pretium est sit amet cursus ultricies. Aenean nisi orci, rutrum nec nisl at, aliquam mollis purus. Proin sodales sem eu porta vehicula. Phasellus sit amet interdum ligula. Aenean congue felis purus, vitae tristique velit luctus ac. Phasellus malesuada posuere tempor. Sed nunc urna, placerat sit amet nulla nec, pellentesque viverra tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sit amet nunc sagittis, elementum eros eget, efficitur enim.</p>
+</div>
+
+<div class="wrapper-ru" ng-if="$ctrl.langState == 'ru'">
+	<p>Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности способствует подготовки и реализации новых предложений. Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития. Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+</div>
+
+<div class="wrapper-ua" ng-if="$ctrl.langState == 'ua'">
+	<p>Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін.</p>
+</div>

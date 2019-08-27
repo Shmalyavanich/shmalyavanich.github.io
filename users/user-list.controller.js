@@ -5,9 +5,9 @@
 		.module("users")
 		.controller("UserList", UserList);
 
-	UserList.$inject = ["usersSrv"];
+	UserList.$inject = ["usersSrv", '$location'];
 
-	function UserList(usersSrv) {
+	function UserList(usersSrv, $location) {
 		var $ctrl = this;
 		
 		init();
@@ -15,6 +15,13 @@
 		function init() {
 			usersSrv.getData().then( function (data) {$ctrl.users = data} );
 		}
+
+    $ctrl.langState = 'en';
+
+    function changeLangState(langCode) {
+      $ctrl.langState = langCode;
+      $location.search('hl', langCode)
+    }
 	}
 
 })();

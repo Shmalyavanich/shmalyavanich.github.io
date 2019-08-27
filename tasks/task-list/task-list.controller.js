@@ -26,6 +26,26 @@
 		function changeLangState(langCode) {
 			$ctrl.langState = langCode;
 		}
+
+		var elementEn = document.createElement("link");
+		elementEn.setAttribute("rel", "alternate");
+		elementEn.setAttribute("hreflang", "en");
+		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/");
+
+		var elementRu = document.createElement("link");
+		elementEn.setAttribute("rel", "alternate");
+		elementEn.setAttribute("hreflang", "ru");
+		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/");
+
+		var elementUa = document.createElement("link");
+		elementEn.setAttribute("rel", "alternate");
+		elementEn.setAttribute("hreflang", "ua");
+		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/");
+
+		var head = document.getElementByName("head");
+		head.append(elementEn);
+		head.append(elementRu);
+		head.append(elementUa);
 	}
 
 })();

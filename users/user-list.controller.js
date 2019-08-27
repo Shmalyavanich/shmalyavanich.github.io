@@ -43,7 +43,7 @@
     function changeLangState(langCode) {
       $ctrl.langState = langCode;
 			var html = document.querySelector("html");
-			html.setAttribute("lang", "langCode");
+			html.setAttribute("lang", langCode);
 
 			switch (langCode) {
 				case 'en':

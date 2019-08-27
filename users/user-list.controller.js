@@ -33,7 +33,7 @@
 		elementEn.setAttribute("hreflang", "ua");
 		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/users?hl=ua");
 
-		var head = document.getElementByName("head");
+		var head = document.querySelector("head");
 		head.append(elementEn);
 		head.append(elementRu);
 		head.append(elementUa);

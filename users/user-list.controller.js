@@ -9,12 +9,15 @@
 
 	function UserList(usersSrv, $location) {
 		var $ctrl = this;
-		
+
+    $ctrl.changeLangState = changeLangState;
+
 		init();
 
 		function init() {
 			usersSrv.getData().then( function (data) {$ctrl.users = data} );
 		}
+
 
     $ctrl.langState = 'en';
 

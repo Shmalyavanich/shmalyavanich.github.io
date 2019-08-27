@@ -23,14 +23,19 @@
 
     function changeLangState(langCode) {
       $ctrl.langState = langCode;
-      $location.search('hl', langCode);
 
 			switch (langCode) {
+				case 'en':
+					window.document.title = 'List of users in English';
+					$location.search('hl', null);
+					break;
 				case 'ru':
-					window.document.title = 'Список пользователей на украинском языке';
+					window.document.title = 'Список пользователей на русском языке';
+					$location.search('hl', langCode);
 					break;
 				case 'ua':
 					window.document.title = 'Список користувачів українською мовою';
+					$location.search('hl', langCode);
 					break;
 			}
     }

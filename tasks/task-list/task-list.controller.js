@@ -33,14 +33,14 @@
 		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/");
 
 		var elementRu = document.createElement("link");
-		elementEn.setAttribute("rel", "alternate");
-		elementEn.setAttribute("hreflang", "ru");
-		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/");
+		elementRu.setAttribute("rel", "alternate");
+		elementRu.setAttribute("hreflang", "ru");
+		elementRu.setAttribute("href", "https://shmalyavanich.github.io/#!/");
 
 		var elementUa = document.createElement("link");
-		elementEn.setAttribute("rel", "alternate");
-		elementEn.setAttribute("hreflang", "ua");
-		elementEn.setAttribute("href", "https://shmalyavanich.github.io/#!/");
+		elementUa.setAttribute("rel", "alternate");
+		elementUa.setAttribute("hreflang", "ua");
+		elementUa.setAttribute("href", "https://shmalyavanich.github.io/#!/");
 
 		var head = document.querySelector("head");
 		head.append(elementEn);

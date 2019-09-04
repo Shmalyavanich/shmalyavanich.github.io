@@ -76,6 +76,13 @@
 		openGraph4.setAttribute("property", "og:image");
 		openGraph4.setAttribute("content", "black-image.png");
 		head.append(openGraph4);
+		
+		
+		var canonical = document.createElement("link");
+		canonical.setAttribute("rel", "canonical");
+		canonical.setAttribute("href", "https://shmalyavanich.github.io/#!/");
+
+		head.append(canonical);
 	}
 
 })();

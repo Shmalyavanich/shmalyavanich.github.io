@@ -23,6 +23,13 @@
 			taskToAdd.action = "";
 			taskToAdd.user = "";
 		}
+		
+		var canonical = document.createElement("link");
+		canonical.setAttribute("rel", "canonical");
+		canonical.setAttribute("href", "https://shmalyavanich.github.io/#!/addTask");
+
+		var head = document.querySelector("head");
+		head.append(canonical);
 	}
 
 })();

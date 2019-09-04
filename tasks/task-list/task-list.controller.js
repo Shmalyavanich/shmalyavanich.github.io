@@ -47,7 +47,7 @@
 		head.append(elementRu);
 		head.append(elementUa);
 		
-		/*var tags = document.querySelectorAll('meta[property*="og:"]');
+		var tags = document.querySelectorAll('meta[property*="og:"]');
 
 		[].map.call(tags, function(tag) {
 			tag.remove();
@@ -75,7 +75,7 @@
 		
 		openGraph4.setAttribute("property", "og:image");
 		openGraph4.setAttribute("content", "black-image.png");
-		head.append(openGraph4);*/
+		head.append(openGraph4);
 	}
 
 })();

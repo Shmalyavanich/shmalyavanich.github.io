@@ -32,11 +32,17 @@
 		elementUa.setAttribute("rel", "alternate");
 		elementUa.setAttribute("hreflang", "ua");
 		elementUa.setAttribute("href", "https://shmalyavanich.github.io/#!/users?hl=ua");
+		
+		var canonical = document.createElement("link");
+		canonical.setAttribute("rel", "canonical");
+		canonical.setAttribute("href", "https://shmalyavanich.github.io/#!/users");
 
 		var head = document.querySelector("head");
 		head.append(elementEn);
 		head.append(elementRu);
 		head.append(elementUa);
+		head.append(canonical);
+		
 
     $ctrl.langState = 'en';
 

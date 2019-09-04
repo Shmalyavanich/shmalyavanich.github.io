@@ -56,7 +56,7 @@
 		//<meta property="og:url" content="https://shmalyavanich.github.io/#!/users">
 		//<meta property="og:title" content="Special title for social sharing buttons!">
 		//<meta property="og:description" content="Not so big, but useful description for social sharing buttons.">
-		var openGraph1 = document.createElement("meta");
+		/*var openGraph1 = document.createElement("meta");
 		var openGraph2 = document.createElement("meta");
 		var openGraph3 = document.createElement("meta");
 		var openGraph4 = document.createElement("meta");
@@ -75,7 +75,7 @@
 		
 		openGraph4.setAttribute("property", "og:image");
 		openGraph4.setAttribute("content", "black-image.png");
-		head.append(openGraph4);
+		head.append(openGraph4);*/
 	}
 
 })();

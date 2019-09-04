@@ -46,6 +46,23 @@
 		head.append(elementEn);
 		head.append(elementRu);
 		head.append(elementUa);
+		
+		//<meta property="og:url" content="https://shmalyavanich.github.io/#!/users">
+		//<meta property="og:title" content="Special title for social sharing buttons!">
+		//<meta property="og:description" content="Not so big, but useful description for social sharing buttons.">
+		var openGraph = document.createElement("meta");
+		
+		openGraph.setAttribute("property", "og:url");
+		openGraph.setAttribute("content", "https://shmalyavanich.github.io/#!/users");
+		head.append(openGraph);
+		
+		openGraph.setAttribute("property", "og:title");
+		openGraph.setAttribute("content", "Special title for social sharing buttons!");
+		head.append(openGraph);
+		
+		openGraph.setAttribute("property", "og:description");
+		openGraph.setAttribute("content", "Not so big, but useful description for social sharing buttons.");
+		head.append(openGraph);
 	}
 
 })();

@@ -47,7 +47,7 @@
 		head.append(elementRu);
 		head.append(elementUa);
 		
-		var tags = document.querySelectorAll('meta[property*="og:"]');
+		/*var tags = document.querySelectorAll('meta[property*="og:"]');
 
 		[].map.call(tags, function(tag) {
 			tag.remove();
@@ -56,7 +56,7 @@
 		//<meta property="og:url" content="https://shmalyavanich.github.io/#!/users">
 		//<meta property="og:title" content="Special title for social sharing buttons!">
 		//<meta property="og:description" content="Not so big, but useful description for social sharing buttons.">
-		/*var openGraph1 = document.createElement("meta");
+		var openGraph1 = document.createElement("meta");
 		var openGraph2 = document.createElement("meta");
 		var openGraph3 = document.createElement("meta");
 		var openGraph4 = document.createElement("meta");

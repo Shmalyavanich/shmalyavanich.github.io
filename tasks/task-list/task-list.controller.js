@@ -50,23 +50,26 @@
 		//<meta property="og:url" content="https://shmalyavanich.github.io/#!/users">
 		//<meta property="og:title" content="Special title for social sharing buttons!">
 		//<meta property="og:description" content="Not so big, but useful description for social sharing buttons.">
-		var openGraph = document.createElement("meta");
+		var openGraph1 = document.createElement("meta");
+		var openGraph2 = document.createElement("meta");
+		var openGraph3 = document.createElement("meta");
+		var openGraph4 = document.createElement("meta");
 		
-		openGraph.setAttribute("property", "og:url");
-		openGraph.setAttribute("content", "https://shmalyavanich.github.io/#!/users");
-		head.append(openGraph);
+		openGraph1.setAttribute("property", "og:url");
+		openGraph1.setAttribute("content", "https://shmalyavanich.github.io/#!/users");
+		head.append(openGraph1);
 		
-		openGraph.setAttribute("property", "og:title");
-		openGraph.setAttribute("content", "Special title for social sharing buttons!");
-		head.append(openGraph);
+		openGraph2.setAttribute("property", "og:title");
+		openGraph2.setAttribute("content", "Special title for social sharing buttons!");
+		head.append(openGraph2);
 		
-		openGraph.setAttribute("property", "og:description");
-		openGraph.setAttribute("content", "Not so big, but useful description for social sharing buttons.");
-		head.append(openGraph);
+		openGraph3.setAttribute("property", "og:description");
+		openGraph3.setAttribute("content", "Not so big, but useful description for social sharing buttons.");
+		head.append(openGraph3);
 		
-		openGraph.setAttribute("property", "og:image");
-		openGraph.setAttribute("content", "black-image.png");
-		head.append(openGraph);
+		openGraph4.setAttribute("property", "og:image");
+		openGraph4.setAttribute("content", "black-image.png");
+		head.append(openGraph4);
 	}
 
 })();

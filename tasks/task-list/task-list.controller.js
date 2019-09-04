@@ -77,6 +77,31 @@
 		openGraph4.setAttribute("content", "black-image.png");
 		head.append(openGraph4);
 		
+		//<meta name="twitter:card" content="summary">
+		//<meta name="twitter:title" content="Twitter! Special title for social sharing buttons!">
+		//<meta name="twitter:description" content="Twitter! Not so big, but useful description for social sharing buttons.">
+		//<meta name="twitter:image" content="https://shmalyavanich.github.io/black-image.png">
+		var twitterCard1 = document.createElement("meta");
+		var twitterCard2 = document.createElement("meta");
+		var twitterCard3 = document.createElement("meta");
+		var twitterCard4 = document.createElement("meta");
+		
+		twitterCard1.setAttribute("name", "twitter:url");
+		twitterCard1.setAttribute("content", "https://shmalyavanich.github.io/#!/testUrl");
+		head.append(twitterCard1);
+		
+		twitterCard2.setAttribute("name", "twitter:title");
+		twitterCard2.setAttribute("content", "social btn title");
+		head.append(twitterCard2);
+		
+		twitterCard3.setAttribute("name", "twitter:description");
+		twitterCard3.setAttribute("content", "social btn description");
+		head.append(twitterCard3);
+		
+		twitterCard4.setAttribute("name", "twitter:image");
+		twitterCard4.setAttribute("content", "black-image.png");
+		head.append(twitterCard4);
+		
 		
 		var canonical = document.createElement("link");
 		canonical.setAttribute("rel", "canonical");

@@ -56,15 +56,15 @@
 		var openGraph4 = document.createElement("meta");
 		
 		openGraph1.setAttribute("property", "og:url");
-		openGraph1.setAttribute("content", "https://shmalyavanich.github.io/#!/users");
+		openGraph1.setAttribute("content", "https://shmalyavanich.github.io/#!/testUrl");
 		head.append(openGraph1);
 		
 		openGraph2.setAttribute("property", "og:title");
-		openGraph2.setAttribute("content", "Special title for social sharing buttons!");
+		openGraph2.setAttribute("content", "social btn title");
 		head.append(openGraph2);
 		
 		openGraph3.setAttribute("property", "og:description");
-		openGraph3.setAttribute("content", "Not so big, but useful description for social sharing buttons.");
+		openGraph3.setAttribute("content", "social btn description");
 		head.append(openGraph3);
 		
 		openGraph4.setAttribute("property", "og:image");

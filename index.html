@@ -18,6 +18,8 @@
 
 	<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -43,9 +45,18 @@
 			</div>
 		</div>
 
-				<ui-view></ui-view>
+		
+		<ui-view></ui-view>
+		
+		<br>
+		<br>
+		<br>
+		<div id="vk_share_button"></div>
+		<script type="text/javascript">
+			document.getElementById('vk_share_button').innerHTML = VK.Share.button(window.location.href, {type: "link", text: "Сохранить!"});
+		</script>
 	</div>
-
+	
 
 	<script src="vendor/angular/angular.js"></script>
 	<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>

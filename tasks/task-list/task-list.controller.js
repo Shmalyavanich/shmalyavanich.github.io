@@ -63,6 +63,10 @@
 		openGraph.setAttribute("property", "og:description");
 		openGraph.setAttribute("content", "Not so big, but useful description for social sharing buttons.");
 		head.append(openGraph);
+		
+		openGraph.setAttribute("property", "og:image");
+		openGraph.setAttribute("content", "black-image.png");
+		head.append(openGraph);
 	}
 
 })();

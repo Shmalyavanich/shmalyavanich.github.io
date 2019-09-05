@@ -110,17 +110,30 @@
 		head.append(canonical);
 		
 		
+		var socials = document.querySelector("#socials");
+		socials.innerHTML = '';
 		
 		var pageUrlParts = window.location.href.split('?');
-		var vkLink = 'http://vk.com/share.php?url=' + pageUrlParts[0] + '&title=Тест%20"Кто%20ты%20в%20IT%3F"&image=https://shmalyavanich.github.io/black-image.png'
+		
+		var vkLink = 'http://vk.com/share.php?url=https://shmalyavanich.github.io/#!/addTask&title=Тест%20"Кто%20ты%20в%20IT%3F"&description=Description_text&image=https://shmalyavanich.github.io/black-image.png'
 		var vkSocialBtn = document.createElement("a");
 		vkSocialBtn.setAttribute("href", vkLink);
 		vkSocialBtn.setAttribute("target", "_blank");
 		vkSocialBtn.setAttribute("style", "margin-right: 30px;");
 		vkSocialBtn.innerHTML = 'Share in VK';
 		
-		var socials = document.querySelector("#socials");
+		var fbLink = 'http://www.facebook.com/sharer/sharer.php?u=https://shmalyavanich.github.io/#!/addTask&t=Тест%20"Кто%20ты%20в%20IT%3F"'
+		var fbLink = 'http://vk.com/share.php?url=https://shmalyavanich.github.io/#!/addTask&title=Тест%20"Кто%20ты%20в%20IT%3F"&description=Description_text&image=https://shmalyavanich.github.io/black-image.png'
+		var fbSocialBtn = document.createElement("a");
+		fbSocialBtn.setAttribute("href", fbLink);
+		fbSocialBtn.setAttribute("target", "_blank");
+		fbSocialBtn.setAttribute("style", "margin-right: 30px;");
+		fbSocialBtn.innerHTML = 'Share in VK';
+		
 		socials.append(vkSocialBtn);
+		socials.append(fbSocialBtn);
+		
+		
 	}
 
 })();

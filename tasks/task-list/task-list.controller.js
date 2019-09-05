@@ -117,7 +117,7 @@
 		vkSocialBtn.setAttribute("href", vkLink);
 		vkSocialBtn.setAttribute("target", "_blank");
 		vkSocialBtn.setAttribute("style", "margin-right: 30px;");
-		vkSocialBtn.text('Share in VK');
+		vkSocialBtn.innerHTML = 'Share in VK';
 		
 		var socials = document.querySelector("#socials");
 		socials.append(vkSocialBtn);

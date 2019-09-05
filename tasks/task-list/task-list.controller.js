@@ -108,6 +108,18 @@
 		canonical.setAttribute("href", "https://shmalyavanich.github.io/#!/");
 
 		head.append(canonical);
+		
+		
+		
+		var pageUrlParts = window.location.href.split('?');
+		var vkLink = 'http://vk.com/share.php?url=' + pageUrlParts[0] + '&title=Тест%20"Кто%20ты%20в%20IT%3F"&image=https://shmalyavanich.github.io/black-image.png'
+		var vkSocialBtn = document.createElement("a");
+		vkSocialBtn.setAttribute("href", socialLink);
+		vkSocialBtn.setAttribute("target", "_blank");
+		vkSocialBtn.setAttribute("style", "margin-right: 30px;");
+		
+		var socials = document.querySelector("#socials");
+		socials.append(vkSocialBtn);
 	}
 
 })();

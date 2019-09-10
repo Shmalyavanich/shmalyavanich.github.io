@@ -44,12 +44,12 @@
 		head.append(canonical);
 		
 		var description = document.createElement("meta");
-		canonical.setAttribute("name", "description");
-		canonical.setAttribute("content", "Some description of users page");
+		description.setAttribute("name", "description");
+		description.setAttribute("content", "Some description of users page");
 		
 		var keywords = document.createElement("meta");
-		canonical.setAttribute("name", "keywords");
-		canonical.setAttribute("content", "users keyword, users, some little user");
+		keywords.setAttribute("name", "keywords");
+		keywords.setAttribute("content", "users keyword, users, some little user");
 		
 		head.append(description);
 		head.append(keywords);

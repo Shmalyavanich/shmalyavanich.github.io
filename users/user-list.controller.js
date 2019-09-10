@@ -47,7 +47,7 @@
 		canonical.setAttribute("name", "description");
 		canonical.setAttribute("content", "Some description of users page");
 		
-		var description = document.createElement("meta");
+		var keywords = document.createElement("meta");
 		canonical.setAttribute("name", "keywords");
 		canonical.setAttribute("content", "users keyword, users, some little user");
 		

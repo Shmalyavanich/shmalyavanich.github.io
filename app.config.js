@@ -33,6 +33,10 @@
         controller: "Courses",
         controllerAs: "$ctrl"
       });
+      .state("sitemap", {
+        url: "/sitemap",
+        controller: "Sitemap"
+      });
 
 	}
 

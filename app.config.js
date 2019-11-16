@@ -26,6 +26,12 @@
       .state("addTask", {
         url: "/addTask",
         template: "<add-task></add-task>"
+      })
+      .state("courses", {
+        url: "/courses/:id",
+        templateUrl: "courses/courses.html",
+        controller: "Courses",
+        controllerAs: "$ctrl"
       });
 
 	}

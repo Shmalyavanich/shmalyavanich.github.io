@@ -64,7 +64,15 @@ class GHAapp < Sinatra::Application
 
     200 # success status
   end
+  
+  get '/sitemap' do
 
+      # # # # # # # # # # # #
+      # ADD YOUR CODE HERE  #
+      # # # # # # # # # # # #
+
+      200 # success status
+  end
 
   helpers do
 

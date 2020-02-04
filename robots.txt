@@ -1,3 +1,8 @@
-User-agent: *
-Disallow: /test-disallow-url
-Disallow: /EPAM_LOGO_Grey.png
+﻿User-agent: *
+Allow: /$
+Allow: /Training
+Allow: /News
+Allow: /Registration
+Allow: /About
+Disallow: /#!/
+Disallow: /Registration/Registration

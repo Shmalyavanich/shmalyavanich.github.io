@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>http://training.epam.am/#!/Training/2345</loc>
+	<lastmod>06-11-2019</lastmod>
+  </url>
+  <url>
+    <loc>http://training.epam.am/#!/News/2</loc>
+	<lastmod>13-06-2013</lastmod>
+  </url>
+  <url>
+    <loc>http://training.epam.am/#!/News/3</loc>
+	<lastmod>13-06-2013</lastmod>
+  </url>
+  <url>
+    <loc>http://training.epam.am/#!/News/4</loc>
+	<lastmod>13-06-2013</lastmod>
+  </url>
+</urlset>

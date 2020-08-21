@@ -57,9 +57,11 @@
     $ctrl.langState = $location.search().hl || 'en';
 
     if(isSearchRobot()) {
-		window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ru';
+		$location.search('hl', 'ru');
+		// window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ru';
 	} else {
-		window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ua';
+		$location.search('hl', 'ua');
+		// window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ua';
 	}
 
 	function isSearchRobot() {

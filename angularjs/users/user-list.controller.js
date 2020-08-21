@@ -5,7 +5,7 @@
 		.module("users")
 		.controller("UserList", UserList);
 
-	UserList.$inject = ["usersSrv", '$location', $routeParams];
+	UserList.$inject = ["usersSrv", '$location', '$routeParams'];
 
 	function UserList(usersSrv, $location, $routeParams) {
 		var $ctrl = this;

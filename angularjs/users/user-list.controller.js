@@ -55,11 +55,21 @@
 		head.append(keywords);
 
     $ctrl.langState = $location.search().hl || 'en';
-    console.log($location.search().hl);
-    // console.log($location.$$search);
-    // console.log($state);
 
-    function changeLangState(langCode) {
+    if(isSearchRobot()) {
+		window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ru';
+	} else {
+		window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ua';
+	}
+
+	function isSearchRobot() {
+		var userAgent = window.navigator.userAgent.toLowerCase();
+
+		return userAgent.includes('googlebot') || userAgent.includes('yandexmobilebot') || userAgent.includes('yandexbot');
+	}
+
+
+		function changeLangState(langCode) {
       $ctrl.langState = langCode;
 			var html = document.querySelector("html");
 			html.setAttribute("lang", langCode);

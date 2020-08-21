@@ -54,15 +54,23 @@
 		head.append(description);
 		head.append(keywords);
 
-    $ctrl.langState = $location.search().hl || 'en';
+
+	$ctrl.langState = $location.search().hl || 'en';
+	console.log($ctrl.langState );
 
     if(isSearchRobot()) {
+		$ctrl.langState = 'ru';
 		$location.search('hl', 'ru');
+
 		// window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ru';
 	} else {
+		$ctrl.langState = 'ru';
 		$location.search('hl', 'ua');
+		$ctrl.langState = 'ua';
 		// window.location.href = 'https://shmalyavanich.github.io/angularjs/#!/users?hl=ua';
 	}
+
+
 
 	function isSearchRobot() {
 		var userAgent = window.navigator.userAgent.toLowerCase();

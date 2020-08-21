@@ -3,7 +3,8 @@
 	<div class="langs-item" ng-click="$ctrl.changeLangState('ru')">Русский</div>
 	<div class="langs-item" ng-click="$ctrl.changeLangState('ua')">Українська</div>
 </div>
-
+<br>
+<br>
 <div class="wrapper-en" ng-if="$ctrl.langState == 'en'">
 	<h3>Tasks</h3>
 	<hr />
@@ -28,6 +29,10 @@
 
 	<p>A small paragraph of text on how you can try to preset the language of a page for a Google bot, if it is not possible to immediately return the desired language. This text is needed to check what exactly the search engine will take, which version of the page, English or Russian. The translation of the text will be an ordinary translator. It's all.</p>
 </div>
+
+<br>
+  <strong>Lang param: {{$ctrl.langState}}</strong>
+</br>
 
 <div class="wrapper-ru" ng-if="$ctrl.langState == 'ru'">
 	<p>На главной странице отображается список несуществующих задач</p>

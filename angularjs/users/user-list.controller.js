@@ -54,7 +54,8 @@
 		head.append(description);
 		head.append(keywords);
 
-    $ctrl.langState = 'en';
+    $ctrl.langState = $location.search('hl') || 'en';
+    console.log($ctrl.langState);
 
     function changeLangState(langCode) {
       $ctrl.langState = langCode;

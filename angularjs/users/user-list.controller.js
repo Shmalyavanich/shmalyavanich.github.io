@@ -5,9 +5,9 @@
 		.module("users")
 		.controller("UserList", UserList);
 
-	UserList.$inject = ["usersSrv", '$location'];
+	UserList.$inject = ["usersSrv", '$location', $routeParams];
 
-	function UserList(usersSrv, $location) {
+	function UserList(usersSrv, $location, $routeParams) {
 		var $ctrl = this;
 
     $ctrl.changeLangState = changeLangState;
@@ -55,7 +55,8 @@
 		head.append(keywords);
 
     $ctrl.langState = $location.search('hl') || 'en';
-    console.log($ctrl.langState);
+    console.log($routeParams);
+    console.log($location);
 
     function changeLangState(langCode) {
       $ctrl.langState = langCode;

@@ -15,7 +15,7 @@
 		init();
 
 		function init() {
-			usersSrv.getData().then( function (data) {$ctrl.users = data} );
+			// usersSrv.getData().then( function (data) {$ctrl.users = data} );
 		}
 
 		var elementEn = document.createElement("link");

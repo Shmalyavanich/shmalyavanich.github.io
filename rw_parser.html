@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rw parser</title>
+	
+	<style>
+		body {
+			font-family: Arial;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.container {
+			width: 100%;
+			max-width: 900px;
+			height: 100%ж
+		}
+		
+		form {
+			padding: 30px;
+			min-height: 500px;
+			background: #eee;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+		<form>
+			status:
+			<br /><br />
+			<input type="date" value="" /> дата или "today"
+			<br /><br />
+			<input type="text" value="621Б" />
+			<br /><br />
+			<button type="button" class="js-start">Start</button>
+		</form>
+    </div>
+	
+	<script>
+		const startBtn = document.querySelector('.js-start');
+		const form = document.querySelector('form');
+		const formData = new FormData(form);
+		
+		if (startBtn) {
+			startBtn.addEventListener("click", function (e) {
+  		
+				const baseUrl = 'https://pass.rw.by/ru/ajax/route/car_places/?';
+				const time = 'from=2100100&to=2100000';
+				const date = '&date=2025-12-21';
+				const trainNumber = '&train_number=621%D0%91';
+				const carType = '&car_type=3';
+				const applyModificator = '&apply_modificator=';
+				const fromDate = '&from_time=1766344200';
+				const security = '&_=1762687419246';
+				
+				const proxy = 'https://cors-test.codehappy.dev/';
+				
+				const url = proxy
+						+ baseUrl 
+						+ time 
+						+ date 
+						+ trainNumber 
+						+ carType 
+						+ applyModificator 
+						+ applyModificator 
+						+ fromDate 
+						+ security;
+				
+				fetch(url, {
+					method: "GET",
+					headers: {
+						//"Content-Type": "application/x-www-form-urlencoded",
+						'Access-Control-Allow-Origin': 'https://pass.rw.by/'
+					}
+				}).then(res => {
+					
+					console.log(res);
+					console.log(formData);
+				});
+			
+			});
+		}
+	</script>
+</body>
+</html>
